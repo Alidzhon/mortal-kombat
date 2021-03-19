@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #010202;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1146px;
+    margin: 0 auto;
+}
+.app {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 44.9%); 
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.header {
+    padding-top: 56px;
+}
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header__block {
+    display: flex;
+    align-items: center;
+}
+.header__name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header__logo_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.header__zabziro-bg {
+    position: absolute;
+    left: 572px;
+    top: 0;
+    z-index: -1;
+}
+.mortollkombat__blocks {
+    padding-top: 201px;
+}
+.mortollombat__texts {
+    max-width: 348px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+.mortollkombat__text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(229, 229, 229, 0.4);
+}
+.mortollkombat__text_border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+}
+.mortollkombat__description {
+    max-width: 460px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+.mortollkombat__group {
+    margin-top: 36px;
+}
+.button {
+    padding: 11px 26px;
+    border-radius: 6px;
+    border: none;
+    background-color:  #2F2F2F;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button-primary {
+    background-color:  #EA6E20;
+    margin-right: 15px;
+}
+.button-text {
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+    .app {
+        height: auto;
+        padding-bottom: 400px;
+        background: url('../img/zabziro-bg.jpg') no-repeat bottom center / 300px;
+    }
+    video {
+        display: none;
+    }
+    .mortollkombat__blocks {
+        padding-top: 2%;
+    }
+    .mortollkombat__description {
+        font-size: 16px;
+        max-width: 333px;
+    }
+    .mortollkombat__film-logo {
+        max-width: 100%;
+    }    
+}
+@media screen and (max-width: 576px) {
+    .button-text {
+        display: none;
+    }
+    .header__name {
+        display: none;
+    }
+    .app {
+        padding-bottom: 350px;
+        background-size: 300px;
+    }
+    .button {
+        margin-bottom: 10px;
+    }
+}
